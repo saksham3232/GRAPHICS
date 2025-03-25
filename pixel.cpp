@@ -8,7 +8,7 @@ int main() {
     initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
 
     // Put a pixel at (200, 200) with WHITE color
-    putpixel(200, 200, WHITE);
+    putpixel(1, 1, WHITE);
 
     // Hold the screen until a key is pressed
     getch();
