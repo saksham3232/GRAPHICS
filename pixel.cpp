@@ -1,27 +1,20 @@
 #include <graphics.h>
-#include <conio.h>
+#include <stdio.h>
 
 int main() {
-    int gd = DETECT, gm;
     
-    // Initialize graphics mode
-    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
-
-    setbkcolor(WHITE);
+    initwindow(getmaxwidth(), getmaxheight(), "Full Screen Mode");
 
     int width = getmaxx();
     int height = getmaxy();
 
-    printf("Width: %d\n", width);
-    printf("Height: %d\n", height);
-
-    putpixel(width - 2, height - 2, WHITE); // Adjust coordinates to be within bounds
-
-    circle(width / 2, height / 2, 100);
-    rectangle(width / 2 - 50, height / 2 - 50, width / 2 + 50, height / 2 + 50);
+    printf("Screen Width: %d\n", width);
+    printf("Screen Height: %d\n", height);
     
+    // Place pixel at the center
+    putpixel(width / 2, height / 2, WHITE);
+
     system("pause");
     closegraph();
-
     return 0;
 }
