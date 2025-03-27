@@ -7,13 +7,20 @@ int main() {
     // Initialize graphics mode
     initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
 
-    // Put a pixel at (200, 200) with WHITE color
-    putpixel(1, 1, WHITE);
+    setbkcolor(WHITE);
 
-    // Hold the screen until a key is pressed
-    getch();
+    int width = getmaxx();
+    int height = getmaxy();
 
-    // Close the graphics mode
+    printf("Width: %d\n", width);
+    printf("Height: %d\n", height);
+
+    putpixel(width - 2, height - 2, WHITE); // Adjust coordinates to be within bounds
+
+    circle(width / 2, height / 2, 100);
+    rectangle(width / 2 - 50, height / 2 - 50, width / 2 + 50, height / 2 + 50);
+    
+    system("pause");
     closegraph();
 
     return 0;
