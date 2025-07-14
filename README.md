@@ -54,10 +54,4 @@ All source codes are located in the `programs/` directory. Below is a brief over
 - All programs demonstrate usage of classic graphics primitives and algorithms.
 - Programs require a graphics-compatible environment; they may not run natively on modern Windows, Mac, or Linux systems without an emulator.
 
-## License
-
-This repository is intended for educational purposes. Feel free to use and modify the code for your learning needs.
-
 ---
-
-*Results are based on a limited code search. For a complete and updated list of files, please check the [GitHub repository](https://github.com/saksham3232/GRAPHICS).*
